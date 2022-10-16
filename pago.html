@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor' crossorigin='anonymous'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.32/dist/sweetalert2.all.min.js"></script>
+
+    <!-- Toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <title> Realizar Pago - NicoTechPC </title>
+
+    <link rel="stylesheet" href="pago.css">
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="contenedor-dolar">
+            <button type="button" class="btn btn-primary" id="btn-dolar"> ARS <> USD </button>
+            <div class="scale-in-top" id="cambio-dolar">
+                <div class="card text-center">
+                    <div class="card-body">
+                        
+                            <h5> TIPO </h5>
+                            <p> COMPRA (ARS$) </p>
+                            <p> VENTA (ARS$) </p>
+                        
+                        
+                            <h5> Dólar Oficial </h5>
+                            <p id="do-compra"></p>
+                            <p id="do-venta"></p>
+                        
+                        
+                            <h5> Dólar Blue </h5>
+                            <p id="db-compra"></p>
+                            <p id="db-venta"></p>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="intereses d-flex flex-column justify-content-center align-items-center">
+            <div class="card text-center" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Nuestras tasas de interés: </h5>
+                    <p class="card-text">1 cuota: 0% de interes</p>
+                    <p class="card-text">2 a 5 cuotas: 10% de interés </p>
+                    <p class="card-text">6 a 11 cuotas: 50% de interés </p>
+                    <p class="card-text">12 o más cuotas: 85% de interés</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="pedido d-flex flex-column justify-content-center align-items-center">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h5 class="card-title">Resumen del pedido </h5>
+                    
+                </div>
+                
+                <div class="card-body total">
+                    <div>
+                        Total
+                    </div>
+                    <div class="totales">
+                        <h5 id="total-dolar"> </h5> |
+                        <h5 id="total-pago" > </h5>
+                    </div>
+                    
+                    
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="usuarios container d-flex">
+
+            <!-- Todavia no se usa, debido a que se usa el prompt para ingresos múltiples -->
+            <div class="col-6">
+                <div class="card text-center">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title"> Datos de pago </h5>
+
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="inputGroup-sizing-sm">Nombre Usuario</span>
+                            <input type="text" class="form-control" id="nombre-usuario">
+                        </div>
+                        <p id="error-nom"> Ingrese nombre de usuario </p>
+
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="inputGroup-sizing-sm">Cantidad de Cuotas</span>
+                            <input type="number" class="form-control" id="cant-cuotas">
+                        </div>
+                        <p id="error-cuotas"> Ingrese una cantidad correcta de cuotas (hasta 24) </p>
+
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="inputGroup-sizing-sm">Nombre Titular</span>
+                            <input type="text" class="form-control" id="nom-tarjeta">
+                        </div>
+                        <p id="error-titular"> Ingrese nombre titular </p>
+
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="inputGroup-sizing-sm">Nro Tarjeta</span>
+                            <input type="number" class="form-control" id="nro-tarjeta">
+                        </div>
+                        <p id="error-nro"> Ingrese nro tarjeta válido </p>
+
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="inputGroup-sizing-sm">Fecha Venc</span>
+                            <input type="month" class="form-control" id="fv-tarjeta">
+                        </div>
+                        <p id="error-fv"> Ingrese fecha de vencimiento </p>
+
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="inputGroup-sizing-sm">CVC</span>
+                            <input type="number" class="form-control" id="cvc-tarjeta">
+                        </div>
+                        <p id="error-cvc"> Ingrese código </p>
+
+                        <button type="button" class="btn btn-primary" id="btn-pagar"> Pagar </button>
+                        <p id="notif-add"> Usuario agregado correctamente! </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title"> Resultados </h5>
+                        <p id="nombre" class="card-text">Nombre Usuario: </p>
+                        <p id="total" class="card-text">Monto total inicial: </p>
+                        <p id="cuotas" class="card-text">Cantidad de cuotas: </p>
+                        <p id="monto-total" class="card-text">Monto total final: </p>
+                        <p id="monto-cuota" class="card-text">Monto por cuota: </p>
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="inputGroup-sizing-sm">Nombre</span>
+                            <input type="text" class="form-control" id="nombre-cuotas">
+                        </div>
+                        <button type="button" class="btn btn-primary" id="btn-cuotas"> Ver Cuotas </button>
+                        <p id="no-enc"> Usuario no encontrado! </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="inicio">
+            <button type="button" class="btn btn-primary" id="btn-inicio"> Volver a la tienda </button>
+        </div>
+        
+
+    </div>
+
+    <script src='pago.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js'
+        integrity='sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2'
+        crossorigin='anonymous'></script>
+
+    <!-- Uso Sweet Alert -->
+    <script src="sweetalert2.all.min.js"></script>
+
+    <!-- Uso Toastify -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+</body>
+
+</html>

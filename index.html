@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor' crossorigin='anonymous'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.32/dist/sweetalert2.all.min.js"></script>
+
+    <!-- Toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <title> Nicotech PC </title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+        media="screen">
+</head>
+
+<body>
+
+    <div class="btn-carrito">
+        <div id="minmaxcarrito" href="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-cart"
+                viewBox="0 0 16 16">
+                <path
+                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+            </svg>
+            <div id="contador-carrito">0</div>
+        </div>
+    </div>
+
+    <div id="inicio" class="row"></div>
+
+
+    <section class="banner_main">
+        <div id="banner1" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="text-bg">
+                                        <span>NicoTech PC</span>
+                                        <h1> Tu tienda de tecnología ! </h1>
+                                        <p> Contamos con amplia variedad de componentes de calidad y périféricos de
+                                            todas las marcas.</p>
+                                        <a href="#pcs"> Comprar </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="text_img">
+                                        <figure><img src="imagenes/pcgm.png" alt="#" /></figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+    </section>
+
+
+    <div class="container-fluid d-flex flex-column">
+
+        <div class="vertNav">
+            <div class="circulos">
+                <img src="imagenes/circle.png">
+                <img src="imagenes/circle.png">
+                <img src="imagenes/circle.png">
+                <img src="imagenes/circle.png">
+                <img src="imagenes/circle.png">
+                <img src="imagenes/circle.png">
+                <img src="imagenes/circle.png">
+
+            </div>
+            <ul class="verticalNav">
+                <li><a href="#inicio"> Inicio </a></li>
+                <li><a href="#pcs"> PCs Armadas </a></li>
+                <li><a href="#monitores"> Monitores </a></li>
+                <li><a href="#auriculares"> Auriculares </a></li>
+                <li><a href="#teclados"> Teclados </a></li>
+                <li><a href="#mouses"> Mouses </a></li>
+                <li><a href="#mousepads"> Mousepads </a></li>
+            </ul>
+        </div>
+
+
+        <div id="pcs" class="row">
+            <h5> PCs ARMADAS </h5>
+        </div>
+
+        <div class="row">
+
+            <div class="col-12">
+                <div class="row">
+                    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                        <div class="col">
+                            <div class="card mb-4 rounded-3 shadow-sm">
+
+                                <div class="card-header py-3">
+                                    <h4 class="my-0 fw-normal"> PC Escritorio 1 </h4>
+                                </div>
+
+                                <div class="card-body">
+                                    <div class="img-carrito">
+                                        <img src="imagenes/pc1.png"
+                                            alt="">
+                                    </div>
+                                    <h1 class="card-title pricing-card-title">$<em>84990</em></h1>
+
+                                    <ul class="mt-3 mb-4">
+                                        <li>Procesador Intel Pentium G6405</li>
+                                        <li>RAM 4GB</li>
+                                        <li>Disco HDD 500GB</li>
+                                        <li>Kit Periféricos + Monitor LG 19'</li>
+                                    </ul>
+                                    <button type="button" class="w-100 btn btn-lg btn-outline-primary agregar-producto">
+                                        Agregar al carrito
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card mb-4 rounded-3 shadow-sm">
+                                <div class="card-header py-3">
+                                    <h4 class="my-0 fw-normal"> PC Escritorio 2 </h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="img-carrito">
+                                        <img src="imagenes/pc2.png"
+                                            alt="">
+                                    </div>
+                                    <h1 class="card-title pricing-card-title">$<em>114990</em></h1>
+                                    <ul class="mt-3 mb-4">
+                                        <li>Procesador Intel I3 12100</li>
+                                        <li>RAM 8GB</li>
+                                        <li>Disco SSD 240GB </li>
+                                        <li>Kit Periféricos + Monitor LG 19'</li>
+
+                                    </ul>
+                                    <button type="button" class="w-100 btn btn-lg btn-outline-primary agregar-producto">
+                                        Agregar al carrito
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card mb-4 rounded-3 shadow-sm ">
+                                <div class="card-header py-3">
+                                    <h4 class="my-0 fw-normal"> PC Escritorio 3 </h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="img-carrito">
+                                        <img src="imagenes/pc3.png"
+                                            alt="">
+                                    </div>
+                                    <h1 class="card-title pricing-card-title">$ <em>144990</em> </h1>
+                                    <ul class="mt-3 mb-4">
+                                        <li>Procesador Intel I5 12400</li>
+                                        <li>RAM 8GB</li>
+                                        <li>Disco SSD 240GB</li>
+                                        <li>Kit Periféricos + Monitor LG 19'</li>
+                                    </ul>
+                                    <button type="button" class="w-100 btn btn-lg btn-outline-primary agregar-producto">
+                                        Agregar al carrito
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                        <div class="col">
+                            <div class="card mb-4 rounded-3 shadow-sm">
+                                <div class="card-header py-3">
+                                    <h4 class="my-0 fw-normal"> PC Gaming 1 </h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="img-carrito">
+                                        <img src="imagenes/pcg1.png"
+                                            alt="">
+                                    </div>
+                                    <h1 class="card-title pricing-card-title">$ <em>220450</em> </h1>
+                                    <ul class="mt-3 mb-4">
+                                        <li>Procesador Intel I5 12600</li>
+                                        <li>RAM 16GB 2x8 </li>
+                                        <li>Disco SSD 240GB </li>
+                                        <li>GTX 1660TI</li>
+                                    </ul>
+                                    <button type="button"
+                                        class="w-100 btn btn-lg btn-outline-primary agregar-producto">Agregar al
+                                        carrito</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card mb-4 rounded-3 shadow-sm">
+                                <div class="card-header py-3">
+                                    <h4 class="my-0 fw-normal"> PC Gaming 2 </h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="img-carrito">
+                                        <img src="imagenes/pcg2.png"
+                                            alt="">
+                                    </div>
+                                    <h1 class="card-title pricing-card-title">$ <em>315340</em> </h1>
+                                    <ul class="mt-3 mb-4">
+                                        <li>Procesador Intel I7 12700</li>
+                                        <li>RAM 16GB 2x8 </li>
+                                        <li>Disco SSD 480GB </li>
+                                        <li>RTX 3060</li>
+                                    </ul>
+
+
+                                    <button type="button"
+                                        class="w-100 btn btn-lg btn-outline-primary agregar-producto">Agregar al
+                                        carrito</button>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card mb-4 rounded-3 shadow-sm ">
+
+                                <div class="card-header py-3  ">
+                                    <h4 class="my-0 fw-normal"> PC Gaming 3 </h4>
+                                </div>
+
+                                <div class="card-body">
+                                    <div class="img-carrito">
+                                        <img src="imagenes/pcg3.png"
+                                            alt="">
+                                    </div>
+                                    <h1 class="card-title pricing-card-title">$ <em> 589690</em> </h1>
+                                    <ul class="mt-3 mb-4">
+                                        <li>Procesador Intel I9 12900</li>
+                                        <li>RAM 32GB 2x16 </li>
+                                        <li>Disco SSD 1TB NVME </li>
+                                        <li>RTX 3090</li>
+                                    </ul>
+
+                                    <button type="button"
+                                        class="w-100 btn btn-lg btn-outline-primary agregar-producto">Agregar al
+                                        carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="monitores" class="row">
+            <h5> MONITORES </h5>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                        <div class="col">
+                            <div class="card mb-4 rounded-3 shadow-sm">
+                                <div class="card-header py-3">
+                                    <h4 class="my-0 fw-normal"> Monitor LG LED 19 19M38A-B</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="img-carrito">
+                                        <img src="imagenes/monitor1.png" alt="">
+                                    </div>
+                                    <h1 class="card-title pricing-card-title">$<em>35990</em></h1>
+                                    <ul class="mt-3 mb-4">
+                                        <li>Pulgadas 18.5''</li>
+                                        <li>Resolución 1366x768</li>
+                                        <li>Entrada/Salida VGA</li>
+                                        <li>Panel TN</li>
+                                    </ul>
+                                    <button type="button" class="w-100 btn btn-lg btn-outline-primary agregar-producto">
+                                        Agregar al carrito
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card mb-4 rounded-3 shadow-sm">
+                                <div class="card-header py-3">
+                                    <h4 class="my-0 fw-normal"> Monitor Samsung LED 24 F390 </h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="img-carrito">
+                                        <img src="imagenes/monitor2.png"
+                                            alt="">
+                                    </div>
+                                    <h1 class="card-title pricing-card-title">$<em>49990</em></h1>
+                                    <ul class="mt-3 mb-4">
+                                        <li>Pulgadas 24''</li>
+                                        <li>Resolución 1920x1080</li>
+                                        <li>Entrada/Salida HDMI</li>
+                                        <li>Panel IPS</li>
+                                    </ul>
+                                    <button type="button" class="w-100 btn btn-lg btn-outline-primary agregar-producto">
+                                        Agregar al carrito
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card mb-4 rounded-3 shadow-sm ">
+                                <div class="card-header py-3">
+                                    <h4 class="my-0 fw-normal"> Monitor Gigabyte LED 27 G27FC-SA </h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="img-carrito">
+                                        <img src="imagenes/monitor3.png" alt="">
+                                    </div>
+                                    <h1 class="card-title pricing-card-title">$ <em>129990</em> </h1>
+                                    <ul class="mt-3 mb-4">
+                                        <li>Pulgadas 27''</li>
+                                        <li>Resolución 1920x1080</li>
+                                        <li>Entrada/Salida DP</li>
+                                        <li>Panel VA</li>
+                                    </ul>
+                                    <button type="button" class="w-100 btn btn-lg btn-outline-primary agregar-producto">
+                                        Agregar al carrito
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="auriculares" class="row">
+            <h5> AURICULARES </h5>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                        <div class="col">
+                            <div class="card mb-4 rounded-3 shadow-sm">
+                                <div class="card-header py-3">
+                                    <h4 class="my-0 fw-normal"> Auriculares Logitech H151 </h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="img-carrito">
+                                        <img src="imagenes/aur1.png" alt="">
+                                    </div>
+                                    <h1 class="card-title pricing-card-title">$<em>4189</em></h1>
+                                    <ul class="mt-3 mb-4">
+                                        <li> Cable de 1.8m </li>
+                                        <li> Micrófono incluido </li>
+                                        <li> Conector Jack 3.5mm </li>
+                                    </ul>
+                                    <button type="button" class="w-100 btn btn-lg btn-outline-primary agregar-producto">
+                                        Agregar al carrito
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card mb-4 rounded-3 shadow-sm">
+                                <div class="card-header py-3">
+                                    <h4 class="my-0 fw-normal"> Auriculares Logitech G335 </h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="img-carrito">
+                                        <img src="imagenes/aur2.png"
+                                            alt="">
+                                    </div>
+                                    <h1 class="card-title pricing-card-title">$<em>15370</em></h1>
+                                    <ul class="mt-3 mb-4">
+                                        <li> Cable de 2m </li>
+                                        <li> Micrófono incluido </li>
+                                        <li> Conector Jack 3.5mm </li>
+                                    </ul>
+                                    <button type="button" class="w-100 btn btn-lg btn-outline-primary agregar-producto">
+                                        Agregar al carrito
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card mb-4 rounded-3 shadow-sm ">
+                                <div class="card-header py-3">
+                                    <h4 class="my-0 fw-normal"> Auriculares HyperX Cloud II </h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="img-carrito">
+                                        <img src="imagenes/aur3.png"
+                                            alt="">
+                                    </div>
+                                    <h1 class="card-title pricing-card-title">$ <em>25490</em> </h1>
+                                    <ul class="mt-3 mb-4">
+                                        <li> Auriculares inalámbricos </li>
+                                        <li> Micrófono incluido </li>
+                                        <li> Conector USB </li>
+                                    </ul>
+                                    <button type="button" class="w-100 btn btn-lg btn-outline-primary agregar-producto">
+                                        Agregar al carrito
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="teclados" class="row">
+            <h5> TECLADOS </h5>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                        <div class="col">
+                            <div class="card mb-4 rounded-3 shadow-sm">
+                                <div class="card-header py-3">
+                                    <h4 class="my-0 fw-normal"> Teclado Logitech K380 BT </h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="img-carrito">
+                                        <img src="imagenes/tec1.png" alt="">
+                                    </div>
+                                    <h1 class="card-title pricing-card-title">$<em>6949</em></h1>
+                                    <ul class="mt-3 mb-4">
+                                        <li> Teclado Inalámbrico BT</li>
+                                        <li> 2x Pila AAA </li>
+                                        <li> Tipo Membrana </li>
+                                    </ul>
+                                    <button type="button" class="w-100 btn btn-lg btn-outline-primary agregar-producto">
+                                        Agregar al carrito
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card mb-4 rounded-3 shadow-sm">
+                                <div class="card-header py-3">
+                                    <h4 class="my-0 fw-normal"> Teclado Redragon K552 </h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="img-carrito">
+                                        <img src="imagenes/tec2.png" alt="">
+                                    </div>
+                                    <h1 class="card-title pricing-card-title">$<em>9599</em></h1>
+                                    <ul class="mt-3 mb-4">
+                                        <li>Teclado RGB c/cable</li>
+                                        <li>Tipo Mecánico</li>
+                                        <li>Switches Red</li>
+                                    </ul>
+                                    <button type="button" class="w-100 btn btn-lg btn-outline-primary agregar-producto">
+                                        Agregar al carrito
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card mb-4 rounded-3 shadow-sm ">
+                                <div class="card-header py-3">
+                                    <h4 class="my-0 fw-normal"> Teclado HyperX Alloy FPS </h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="img-carrito">
+                                        <img src="imagenes/tec3.png" alt="">
+                                    </div>
+                                    <h1 class="card-title pricing-card-title">$ <em>12290</em> </h1>
+                                    <ul class="mt-3 mb-4">
+                                        <li>Teclado c/cable</li>
+                                        <li>Tipo Mecánico </li>
+                                        <li>Switches Red</li>
+
+                                    </ul>
+                                    <button type="button" class="w-100 btn btn-lg btn-outline-primary agregar-producto">
+                                        Agregar al carrito
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="mouses" class="row">
+            <h5> MOUSES </h5>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                        <div class="col">
+                            <div class="card mb-4 rounded-3 shadow-sm">
+                                <div class="card-header py-3">
+                                    <h4 class="my-0 fw-normal"> Mouse Logitech G203 </h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="img-carrito">
+                                        <img src="imagenes/mou1.png"
+                                            alt="">
+                                    </div>
+                                    <h1 class="card-title pricing-card-title">$<em>4399</em></h1>
+                                    <ul class="mt-3 mb-4">
+                                        <li>Mouse RGB c/cable </li>
+                                        <li>Conector USB</li>
+                                        <li>Hasta 8000DPI</li>
+
+                                    </ul>
+                                    <button type="button" class="w-100 btn btn-lg btn-outline-primary agregar-producto">
+                                        Agregar al carrito
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card mb-4 rounded-3 shadow-sm">
+                                <div class="card-header py-3">
+                                    <h4 class="my-0 fw-normal"> Mouse HyperX Pulsefire FPS </h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="img-carrito">
+                                        <img src="imagenes/mou2.png"
+                                            alt="">
+                                    </div>
+                                    <h1 class="card-title pricing-card-title">$<em>8645</em></h1>
+                                    <ul class="mt-3 mb-4">
+                                        <li>Mouse RGB c/cable </li>
+                                        <li>Conector USB</li>
+                                        <li>Hasta 16000DPI</li>
+                                    </ul>
+                                    <button type="button" class="w-100 btn btn-lg btn-outline-primary agregar-producto">
+                                        Agregar al carrito
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card mb-4 rounded-3 shadow-sm ">
+                                <div class="card-header py-3">
+                                    <h4 class="my-0 fw-normal"> Mouse Logitech G502 Lightspeed </h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="img-carrito">
+                                        <img src="imagenes/mou3.png"
+                                            alt="">
+                                    </div>
+                                    <h1 class="card-title pricing-card-title">$ <em>19219</em> </h1>
+                                    <ul class="mt-3 mb-4">
+                                        <li>Mouse RGB Inalámbrico </li>
+                                        <li>Conector USB</li>
+                                        <li>Hasta 16000DPI</li>
+                                    </ul>
+                                    <button type="button" class="w-100 btn btn-lg btn-outline-primary agregar-producto">
+                                        Agregar al carrito
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="mousepads" class="row">
+            <h5> MOUSEPADS </h5>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                        <div class="col">
+                            <div class="card mb-4 rounded-3 shadow-sm">
+                                <div class="card-header py-3">
+                                    <h4 class="my-0 fw-normal"> Mousepad Redragon Archelon </h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="img-carrito">
+                                        <img src="imagenes/pad1.png"
+                                            alt="">
+                                    </div>
+                                    <h1 class="card-title pricing-card-title">$<em>3999</em></h1>
+                                    <ul class="mt-3 mb-4">
+                                        <li>400 x 450 mm </li>
+                                        <li>Grosor 4mm </li>
+                                        <li>Tipo Speed</li>
+                                    </ul>
+                                    <button type="button" class="w-100 btn btn-lg btn-outline-primary agregar-producto">
+                                        Agregar al carrito
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card mb-4 rounded-3 shadow-sm">
+                                <div class="card-header py-3">
+                                    <h4 class="my-0 fw-normal"> Mousepad HyperX Fury S Pro XL </h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="img-carrito">
+                                        <img src="imagenes/pad2.png"
+                                            alt="">
+                                    </div>
+                                    <h1 class="card-title pricing-card-title">$<em>6690</em></h1>
+                                    <ul class="mt-3 mb-4">
+                                        <li>900 mm x 420 mm</li>
+                                        <li>Grosor 4mm</li>
+                                        <li>Tipo Speed </li>
+
+                                    </ul>
+                                    <button type="button" class="w-100 btn btn-lg btn-outline-primary agregar-producto">
+                                        Agregar al carrito
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card mb-4 rounded-3 shadow-sm ">
+                                <div class="card-header py-3">
+                                    <h4 class="my-0 fw-normal"> Mousepad Logitech Cloud 9</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="img-carrito">
+                                        <img src="imagenes/pad3.png"
+                                            alt="">
+                                    </div>
+                                    <h1 class="card-title pricing-card-title">$ <em>5999</em> </h1>
+                                    <ul class="mt-3 mb-4">
+                                        <li>460 mm x 400 mm</li>
+                                        <li>Grosor 3mm</li>
+                                        <li>Tipo Speed </li>
+                                    </ul>
+                                    <button type="button" class="w-100 btn btn-lg btn-outline-primary agregar-producto">
+                                        Agregar al carrito
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="carrito">
+
+            <div class="visual-carrito">
+                <h2>Carrito </h2>
+                <button class="btn btn-danger" id="cerrar"> X </button>
+
+                <div class="filabase">
+                    <div class="col-3">
+                        <p>Producto</p>
+                    </div>
+                    <div class="col-3">
+                        <p>Nombre</p>
+                    </div>
+                    <div class="col-3">
+                        <p>Precio AR$</p>
+                    </div>
+                    <div class="col-3">
+                        <p>Eliminar</p>
+                    </div>
+                </div>
+
+                <div id="total"> Total AR$ <em>0</em> </div>
+                <button class="comprar "> Comprar </button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src='script.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js'
+        integrity='sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2'
+        crossorigin='anonymous'></script>
+
+    <!-- Uso Sweet Alert -->
+    <script src="sweetalert2.all.min.js"></script>
+
+    <!-- Uso Toastify -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+</body>
+
+</html>

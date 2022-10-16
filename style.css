@@ -1,0 +1,474 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    margin: 0 8%;
+}
+
+.btn-carrito{
+    position: fixed;
+    z-index: 10;
+    background-color: white;
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 30px;
+    right: 30px;
+    transition: 0.2s all;
+    cursor: pointer;
+}
+
+#contador-carrito {
+    background-color: red;
+    height: 16px;
+    width: 16px;
+    font-size: 12px;
+    color: white;
+    border-radius: 100%;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    text-align: center;
+
+}
+
+.btn-carrito:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(0px 0px 10px white);
+}
+
+.navbar-brand {
+    transition: 0.2s all;
+}
+
+.navbar-brand:hover {
+    filter: drop-shadow(0px 0px 10px black);
+}
+
+h5 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+    filter: drop-shadow(0px 0px 10px black);
+    font-weight: bold;
+}
+
+.img-carrito img {
+    width: 70%;
+    aspect-ratio: 10/8;
+    object-fit: cover;
+    border-radius: 5px;
+    /* border: 1px solid rgb(77, 77, 77); */
+    /* filter: drop-shadow(0px 0px 5px black); */
+    margin-bottom: 10px;
+}
+
+.container-fluid {
+    /* background: rgb(205, 227, 233);
+    background: linear-gradient(347deg, rgba(72, 62, 104, 0.8) 0%, rgb(128, 18, 61, 0.8) 100%); */
+    background-image: url("https://i.pinimg.com/originals/83/ee/86/83ee86204adbc7f85a1740fcbabc10b6.gif");
+    background-size: cover;
+    background-color: gray;
+    background-blend-mode: darken;
+    padding: 5% 8%;
+}
+
+.card {
+    filter: drop-shadow(5px 5px 5px rgb(77, 77, 77));
+    height: 100%;
+    background-color: rgba(88, 88, 88, 0.5);
+    color: white;
+    border-radius: none;
+    filter: drop-shadow(0px 0px 0px rgb(128, 18, 61, 0.8));
+}
+
+
+
+.card-title {
+    font-size: 2rem;
+    
+}
+
+li {
+    text-align: start;
+}
+
+.card button{
+    background-color: rgb(128, 18, 61, 0.8);
+    border: none;
+    color: white;
+    transition: 0.2s all;
+    font-size: 20px;
+    height: 60px;
+    
+}
+
+#carrito {
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+
+    display: flex;
+    z-index: 20;
+
+    transition: 0.5s all;
+}
+
+#carrito .minmax {
+    height: 100%;
+}
+
+.visual-carrito {
+    background: rgb(205, 227, 233);
+    background: linear-gradient(347deg, rgba(72, 62, 104, 0.8) 0%, rgb(128, 18, 61, 0.8) 100%);
+    filter: drop-shadow(-10px 0px 20px #000000);
+
+    display: none;
+    width: 700px;
+
+}
+
+#cerrar {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.visual-carrito h2 {
+    padding: 20px 0;
+    margin: 0;
+    text-align: center;
+    background-color: rgb(128, 18, 61, 0.8);
+    color: white;
+
+}
+
+em {
+    font-style: normal;
+}
+
+.fila {
+    display: grid;
+    grid-template-rows: repeat(1, 100px);
+    grid-template-columns: repeat(4, 1fr);
+    background-color: white;
+    border-radius: 20px;
+    border-bottom: solid 1px black;
+    margin: 5px 10px;
+}
+
+.fila div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fila div p {
+    margin: 0;
+}
+
+.fila img,
+.filabase img {
+    width: 110px;
+    aspect-ratio: 9/8;
+    border-radius: 3px;
+
+}
+
+#total {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-left: 20px;
+    font-size: 20px;
+    width: 59%;
+    background-color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px 20px 20px 0px;
+}
+
+.comprar {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40%;
+    height: 60px;
+    background-color: rgb(128, 18, 61, 0.8);
+    border-radius: 20px 20px 0 20px;
+    border: none;
+    text-decoration: solid;
+    font-size: 20px;
+    transition: 0.2s all;
+    color: white;
+}
+
+.filabase {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(128, 18, 61, 0.8);
+    color: white;
+    padding: 0 0 10px 0;
+    border-radius: 0 0 20px 20px;
+    filter: drop-shadow(0px 0px 10px rgb(128, 18, 61, 0.8));
+}
+
+.filabase div p {
+    margin: 0;
+    text-align: center;
+    font-weight: 700;
+}
+
+.eliminar {
+    width: 26px;
+    height: 26px;
+    font-size: 12px;
+    background-color: rgb(215, 77, 77);
+    color: white;
+    border-radius: 20%;
+    border: none;
+}
+
+.comprar:hover, .card button:hover {
+    background-color: rgb(7, 155, 188);
+    font-size: 24px;
+
+}
+
+
+/* nav vertical */
+
+.vertNav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 100px;
+    height: 80vh;
+    width: 10%;
+    z-index: 200;
+}
+
+.vertNav .circulos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30%;
+    transition: 0.5s all;
+}
+
+.vertNav .circulos img {
+    height: 15px;
+    width: 20px;
+    filter: invert(100%) opacity(50%);
+    padding-left: 5px;
+    transition: 0.5s all;
+}
+
+.vertNav .verticalNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60%;
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.vertNav .verticalNav li {
+    padding-left: 10px;
+    transition: 0.5s all;
+}
+
+.vertNav .verticalNav li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-family: "Plus Jakarta Sans";
+    font-weight: 500;
+    transition: 0.5s all;
+    scroll-behavior: smooth;
+}
+
+.vertNav .verticalNav li a:hover {
+    filter: drop-shadow(1px 1px 10px rgb(0, 0, 0));
+}
+
+.vertNav .verticalNav li:hover {
+    transform: scale(1.05) translateX(10px);
+    filter: drop-shadow(0px 0px 10px rgb(220, 28, 102));
+    color: rgb(220, 28, 102);
+}
+
+.vertNav:hover .verticalNav {
+    display: flex;
+    animation: fade-in-fwd 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.vertNav:hover .circulos {
+    height: 60%;
+}
+
+.vertNav:hover .circulos img {
+    filter: invert(100%) opacity(100%);
+    height: 22px;
+    width: 27px;
+}
+
+/* hero */
+
+
+
+.banner_main {
+    background-image: url("https://i.pinimg.com/originals/fa/dc/b2/fadcb24075acb650de29f258af69d830.gif");
+    background-color: gray;
+    background-blend-mode:darken;
+    background-repeat: no-repeat;
+    min-height: 1000px;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* .banner_main::before {
+    position: absolute;
+    content: "";
+    width:50px; 
+    height:40px;
+    background: url("imagenes/cross.png");
+    background-repeat: no-repeat;
+    bottom: -38px;
+    right: 38px;
+}
+.banner_main::after {
+    position: absolute;
+    content: "";
+    width:50px; 
+    height:40px;
+    background: url("imagenes/cross.png");
+    background-repeat: no-repeat;
+    bottom: -38px;
+    left: 38px;
+} */
+
+.text-bg {
+    text-align: left;
+}
+
+.text-bg h1 {
+    color: #fff;
+    font-size: 81px;
+    line-height: 80px;
+    padding-bottom: 45px;
+    font-weight: bold;
+}
+
+.text-bg span {
+    color: #fff;
+    font-size: 42px;
+    line-height: 50px;
+    font-weight: normal;
+    padding-bottom: 18px;
+    display: block;
+}
+
+.text-bg p {
+    line-height: 28px;
+    font-weight: 500;
+    padding-bottom: 60px;
+    display: block;
+}
+
+.text-bg figure img {
+    width: 100%;
+    padding-top: 70px;
+    
+
+}
+
+.text_img {
+    margin-right: -130px;
+}
+
+.text_img figure {
+    margin: 0;
+}
+
+.text_img figure img {
+    width: 100%;
+    z-index: 1;
+    filter: drop-shadow(0px 0px 10px white);
+}
+
+.carousel-caption {
+    position: inherit;
+}
+
+#banner1 .carousel-inner {
+    padding-right: 130px;
+}
+
+#banner1 .carousel-indicators {
+    left: inherit;
+    bottom: 40px;
+}
+
+#banner1 .carousel-indicators li {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background: rgb(128, 18, 61);
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+#banner1 .carousel-indicators li.active {
+    background: #ffffff;
+}
+
+#banner1 a.carousel-control-next,
+#banner1 a.carousel-control-prev {
+    display: none;
+}
+
+.text-bg a {
+    font-size: 17px;
+    background-color: transparent;
+    border: #fff solid 2px;
+    color: #fff;
+    font-weight: 500;
+    padding: 14px 0px;
+    width: 100%;
+    max-width: 215px;
+    text-align: center;
+    display: inline-block;
+    transition: ease-in all 0.5s;
+    margin-right: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    
+}
+
+.text-bg a:hover {
+    background-color: rgb(128, 18, 61);
+    color: #fff;
+    transition: ease-in all 0.5s;
+}

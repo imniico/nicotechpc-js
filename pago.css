@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* .container-fluid .logo,
+.container-fluid .bienvenida {
+    height: 60px;
+
+} */
+
+
+
+.logo p {
+    text-align: center;
+    margin: 0;
+    height: 25px;
+    color: rgb(21, 112, 203);
+    font-weight: 700;
+
+}
+
+.bienvenida p {
+    text-align: center;
+    margin: 0;
+    height: 25px;
+
+}
+
+hr {
+    border: 3px solid black;
+}
+
+h1,
+h2 {
+    text-decoration: underline;
+    padding-bottom: 20px;
+}
+
+.contenedor-dolar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.5s all;
+    margin-bottom: 20px;
+}
+
+.contenedor-dolar button {
+    margin-bottom: 5px;
+}
+
+.contenedor-dolar #cambio-dolar {
+    width: 40%;
+    transition: 0.5s all;
+}
+
+.contenedor-dolar .card-body {
+    display: grid;
+    grid-template-rows: repeat(3, 30%);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.contenedor-dolar .card-body h5,
+.contenedor-dolar .card-body p {
+    margin: 0;
+    text-align: center;
+}
+
+
+.scale-in-top {
+    -webkit-animation: scale-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+
+@keyframes scale-in-top {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        -webkit-transform-origin: 50% 0%;
+        transform-origin: 50% 0%;
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: 50% 0%;
+        transform-origin: 50% 0%;
+        opacity: 1;
+    }
+}
+
+.main {
+    background: rgb(205, 227, 233);
+    background: linear-gradient(347deg, rgba(72, 62, 104, 0.8) 0%, rgb(128, 18, 61, 0.8) 100%);
+    padding: 50px;
+    background-size: cover;
+}
+
+.botones {
+    padding: 50px 35%;
+}
+
+.card {
+    height: 100%;
+}
+
+.card-body h5 {
+
+    font-weight: 700;
+}
+
+.card-body p {
+    text-align: start;
+    color: #274a72;
+}
+
+.card-body button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+#error-nom,
+#error-cuotas,
+#error-titular,
+#error-nro,
+#error-fv,
+#error-cvc {
+    margin-top: 0;
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
+#notif-add {
+    margin-top: 10px;
+    color: rgb(8, 179, 62);
+    text-align: center;
+    display: none;
+}
+
+#no-enc {
+    margin-top: 0;
+    color: red;
+    font-size: 12px;
+    display: none;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 0;
+}
+
+.pedido .card{
+    width: 50%;
+    margin-top: 20px;
+}
+
+.pedido .card .card-body .detalle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pedido .card .card-body .detalle p{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.pedido img{
+    width: 110px;
+    aspect-ratio: 9/8;
+	border-radius: 5px;
+	filter: drop-shadow(2px 2px 5px rgb(108, 108, 108));
+}
+
+.pedido .total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 12%;
+    font-weight: bold;
+}
+
+.pedido .total .totales{
+    display: flex;
+    gap: 10px;
+}
+
+.usuarios{
+    margin-top: 20px;
+}
+
+.inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    transition: 0.2s all;
+    visibility: hidden;
+}
+
+.inicio button{
+    transition: 0.2s all;
+    border:none;
+    padding: 15px 30px;
+}
+
+.inicio button:hover{
+    background-color: rgb(7, 155, 188);
+    font-size: 22px;
+}
