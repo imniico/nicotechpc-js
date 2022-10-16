@@ -53,12 +53,13 @@
 }
 
 h5 {
-    font-size: 3rem;
+    font-size: 3.2rem;
     text-align: center;
     padding: 20px 0;
     color: white;
     filter: drop-shadow(0px 0px 10px black);
     font-weight: bold;
+    font-family: "Asus ROG";
 }
 
 .img-carrito img {
@@ -369,6 +370,11 @@ em {
     left: 38px;
 } */
 
+@font-face {
+    font-family: "Asus ROG";
+    src: url("fuentes/ASUSROG.ttf");
+}
+
 .text-bg {
     text-align: left;
 }
@@ -379,15 +385,19 @@ em {
     line-height: 80px;
     padding-bottom: 45px;
     font-weight: bold;
+    font-family: "Asus ROG";
+
 }
 
 .text-bg span {
     color: #fff;
-    font-size: 42px;
+    font-size: 50px;
     line-height: 50px;
     font-weight: normal;
     padding-bottom: 18px;
     display: block;
+    font-family: "Asus ROG";
+    
 }
 
 .text-bg p {
@@ -395,6 +405,7 @@ em {
     font-weight: 500;
     padding-bottom: 60px;
     display: block;
+    
 }
 
 .text-bg figure img {
