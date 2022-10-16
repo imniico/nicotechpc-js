@@ -171,7 +171,7 @@ function validar(nom, cant_cuotas, titular, nro, fechavenc, cvc) {
         enom.style.display = "none";
     }
 
-    if (cant_cuotas == "" || cant_cuotas <= 0 || cant_cuotas >= 24) {
+    if (cant_cuotas == "" || cant_cuotas <= 0 || cant_cuotas > 24) {
         ecuotas.style.display = "block";
         val = false;
     } else {
